@@ -29,11 +29,11 @@ def main(param):
   image = Image.open(io.BytesIO(bytes))
   
   #Apply image processing command
-  roiImg = image.rotate(45)
+  image.thumbnail((128,128))
  
   #Save the result into as a byte array
   imgByteArr = io.BytesIO()
-  roiImg.save(imgByteArr, format='PNG')
+  image.save(imgByteArr, format='PNG')
   
   #encode the binary array as base64
   imgByteArrValue = imgByteArr.getvalue()
