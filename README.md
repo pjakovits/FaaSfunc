@@ -7,7 +7,9 @@ Simple OpenFaaS Python function for generating a thumbinail. Expects the input t
 
 ### Assumptions:
 Content-Type of the input: multipart/form-data
+
 Form field name, which contains the image data: pic
+
 Location of the OpenFaaS deployment: localhost:8080
 
 ### Building the function using OpenFaas CLI:
