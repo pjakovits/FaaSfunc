@@ -1,4 +1,4 @@
-# Image thumbinail generation functione Example for OpenFaaS 
+# Image thumbnail generation functione Example for OpenFaaS 
 Simple OpenFaaS Python function for generating a thumbnail of an image that user submits though a typical HTTP (multipart/form-data) form. Uses Python Pillow image processing library. 
 
 ## Assumptions:
