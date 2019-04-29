@@ -9,10 +9,10 @@ Form field name, which contains the image data: pic
 Location of the OpenFaaS deployment: localhost:8080
 
 ## Building the function using OpenFaas CLI:
-faas-cli build  --build-option dev --build-option pillow -f ./thumbnail.yml
+```faas-cli build  --build-option dev --build-option pillow -f ./thumbnail.yml```
 
 ## Deploying the function using OpenFaas CLI:
-faas-cli deploy -f ./thumbnail.yml
+```faas-cli deploy -f ./thumbnail.yml```
 
 ## Function REST enpoint:
 http://localhost:8080/function/thumbnail
