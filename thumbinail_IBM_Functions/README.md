@@ -4,14 +4,18 @@ Simple IBM cloud Python function for generating a thumbnail of an image that use
 ## Assumptions:
 Content-Type of the input: multipart/form-data
 
+Function runtime is Python 3.6.6
+
 Form field name, which contains the image data: pic
 
 Function Action has been exposed as a Web Action
 
 IBM_FUNCTION_ENDPOINT does not end with .json (e.g https://eu-gb.functions.cloud.ibm.com/api/v1/web/jakovits_zone/default/thumbinail)
 
+## Installation
+Function can be created and deployed through IBM Cloud Functions web interface at https://cloud.ibm.com/openwhisk/
 
-### HTML form for sending image to the function
+## HTML form for sending image to the function
 ```
 <html>
   <body>
