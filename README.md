@@ -2,9 +2,13 @@
 
 This repository contains example FaaS functions
 
+## 1. thumbinail_example
+Simple OpenFaaS Python function for generating a thumbinail. Expects the input to be a multipart/form-data, (e.g. sent though a typical HTTP form). Uses Python Pillow image processing library. 
 
-## thumbinail_example
-Simple OpenFaaS Python function for generating a thumbinail. Expects the input to be a multipart/form data, (e.g. sent though a typical HTTP form). 
+### Assumptions:
+Content-Type of the input: multipart/form-data
+Form field name, which contains the image data: pic
+Location of the OpenFaaS deployment: localhost:8080
 
 ### Building the function using OpenFaas CLI:
 faas-cli build  --build-option dev --build-option pillow -f ./thumbnail.yml
